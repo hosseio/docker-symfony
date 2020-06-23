@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 
 APP_ROOT = /var/www
-TARGET_CONTAINER = $(shell docker ps -q -a -f 'name=mercurius_php-fpm')
+TARGET_CONTAINER = $(shell docker ps -q -a -f 'name=docker-symfony_php-fpm')
 
 BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
 
